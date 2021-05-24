@@ -1,0 +1,128 @@
+html, body {
+    font-family: 'Architects Daughter', cursive;
+    padding: 2rem;
+    background-color: #FFFEF1;
+    /* color: #4A4700; */
+    padding-bottom: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.addItem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 10px; */
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+
+.my-input {
+    width: auto;
+    height: auto;
+    grid-column: span 2;
+    margin: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+button {
+    height: auto;
+
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.done {
+    font-style: italic;
+    font-size: 90%;
+    text-decoration: line-through;
+}
+
+.checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+    justify-self: end;
+}
+
+.checkbox:hover {
+    transform: scale(1.1);
+}
+
+.remove {
+    border: 0;
+    color: #dc3545;
+    background-color: #FFFEF1;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    justify-self: start;
+}
+
+.remove:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.myGithub {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 850px) {
+    .buttons {
+        grid-column: auto / span 2;
+    }
+}
+
+@media (max-width: 1000px) {
+    li {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    html, body {
+        padding: 0.5rem;
+    }
+
+    .addItem {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+}
